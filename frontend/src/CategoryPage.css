@@ -1,0 +1,162 @@
+/* CategoryPage.css */
+.category-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .category-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-item {
+    margin-bottom: 10px;
+  }
+  
+  .category-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-link:hover {
+    background-color: #f0f0f0;
+  }
+
+  
+.add-category-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category-input {
+    flex: 1;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-category-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-category-button:hover {
+    background-color: #0056b3;
+  }
+
+  
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.video-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.add-video-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-video-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-video-form input[type='text'],
+.add-video-form textarea,
+.add-video-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-video-form select {
+  appearance: none;
+  padding: 8px;
+  background: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='%23333'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+}
+
+.video-fields {
+  margin-top: 20px;
+}
+
+.video-fields h3 {
+  margin-bottom: 10px;
+}
+
+.video-fields button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.video-fields button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust styling for dynamically added video fields */
+.video-fields div {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.video-fields div:last-child {
+  margin-bottom: 0;
+}
